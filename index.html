@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090e1b">
+  <title>RX DualNet</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">RX<span>DUALNET</span></div>
+    <div class="status" id="status">SYSTEM READY</div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>RX DualNet</h1>
+      <p>Smart Network Management</p>
+    </section>
+
+    <section class="card">
+      <h2>VMess Configuration</h2>
+      <p>Masukkan konfigurasi VMess kamu.</p>
+
+      <textarea
+        id="configInput"
+        placeholder="Tempel JSON VMess di sini..."
+      ></textarea>
+
+      <div class="buttons">
+        <button id="validateBtn">VALIDASI CONFIG</button>
+
+        <label class="upload">
+          PILIH FILE JSON
+          <input type="file" id="fileInput" accept=".json">
+        </label>
+      </div>
+
+      <div id="result" class="result">
+        Menunggu konfigurasi...
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Connection Information</h2>
+      <div id="serverInfo">
+        <p>Server: -</p>
+        <p>Port: -</p>
+        <p>Protocol: -</p>
+        <p>TLS: -</p>
+        <p>Transport: -</p>
+      </div>
+    </section>
+
+    <footer>
+      RX DualNet © 2026
+      <p>Hybrid Android Network Project</p>
+    </footer>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
